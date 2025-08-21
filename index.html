@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+
+      margin: 0;
+      display: flex;
+      justify-content: center; /* yatay ortala */
+      align-items: center; /* dikey ortala */
+      height: 100vh; /* sayfa yüksekliğini kapsa */
+      flex-direction: column;
+    }
+    h1 {
+      color: #333;
+      /* Animasyon kodu */
+      animation: colorChange 5s infinite alternate;
+    }
+
+    /* Anahtar kareler (keyframes) ile animasyonu tanımlama */
+    @keyframes colorChange {
+      0% {
+        color: #333;
+      }
+      25% {
+        color: #e74c3c;
+      }
+      50% {
+        color: #3498db;
+      }
+      75% {
+        color: #2ecc71;
+      }
+      100% {
+        color: #9b59b6;
+      }
+    }
+  </style>
+  <body>
+    <h1>KALORİ HESAPLAMA</h1>
+
+    <script src="./js/task-1.js"></script>
+    <script src="./js/task-2.js"></script>
+    <script src="./js/task-3.js"></script>
+  </body>
+</html>
